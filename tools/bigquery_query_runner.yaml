@@ -1,0 +1,25 @@
+identity:
+  name: bigquery_query_runner
+  author: rikiy
+  label:
+    en_US: BigQuery Query Runner
+    ja_JP: BigQuery クエリ実行
+  description:
+    human:
+      en_US: Executes a GoogleSQL query on BigQuery and returns the result.
+      ja_JP: BigQueryに対してGoogleSQLクエリを実行し、結果を返します。
+    llm:
+      en_US: This tool executes a GoogleSQL query string on a BigQuery data warehouse containing ad performance data. The input must be a valid SQL query.
+      ja_JP: このツールは広告パフォーマンスデータが格納されたBigQueryデータウェアハウスに対してGoogleSQLクエリ文字列を実行します。入力は有効なSQLクエリである必要があります。
+parameters:
+  - name: sql_query
+    type: string
+    required: true
+    label:
+      en_US: SQL Query
+      ja_JP: SQLクエリ
+    human_description:
+      en_US: The GoogleSQL query to execute.
+      ja_JP: 実行するGoogleSQLクエリ。
+    llm_description: The complete and valid GoogleSQL query string to be executed.
+    form: llm
