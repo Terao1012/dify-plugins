@@ -1,0 +1,27 @@
+# digi-ad/provider/google.yaml
+
+identity:
+  author: rikiy
+  name: google
+  label:
+    en_US: Google Cloud
+    ja_JP: Google Cloud
+  description:
+    en_US: Tools for Google Cloud Platform.
+    ja_JP: Google Cloud Platformのためのツール群
+
+extra: {}
+
+credentials_for_provider:
+  gcp_service_account_json:
+    type: secret-input
+    required: true
+    label:
+      en_US: GCP Service Account JSON
+      ja_JP: GCP サービスアカウント JSON
+    help:
+      en_US: Paste the entire content of your service account JSON key file.
+      ja_JP: サービスアカウントのJSONキーファイルの内容全体を貼り付けてください。
+
+tools:
+  - "tools/bigquery_query_runner.yaml"
