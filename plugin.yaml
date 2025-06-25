@@ -1,4 +1,3 @@
-# digi-ad/plugin.yaml
 identity:
   name: digi-ad
   author: rikiy
@@ -8,4 +7,4 @@ identity:
   description:
     en_US: A tool to connect Dify with Google BigQuery for ad analysis.
     ja_JP: DifyとGoogle BigQueryを連携し広告分析を行うためのツールです。
-provider: "provider/google.yaml"  # ←ここ！パスとスペルを厳密に確認！
+provider: "provider/google.yaml"
